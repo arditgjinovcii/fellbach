@@ -96,13 +96,15 @@ a {
 }
 
 .swiper-slide .wrapper .left_side {
-  max-width: 48%;
-  clip-path: polygon(0 0, 100% 5%, 93% 94%, 7% 100%);
+  width: 50%;
 }
 
 .swiper-slide .wrapper .left_side img {
-  border-radius: 10px 30px 112px 75px;
-  width: 100%;
+  clip-path: url(#slider);
+}
+
+.swiper-slide .wrapper .right_side {
+  max-width: 50%;
 }
 
 .swiper-slide .wrapper .right_side .hero-title {
@@ -188,8 +190,8 @@ a {
 
 .menu-item.active {
   background-color: #424e9e;
-  clip-path: polygon(0 4%, 100% 0, 91% 100%, 7% 100%);
-  border-radius: 20px;
+  clip-path: polygon(-0.8% 4.8%, 100.1% 0%, 95.5% 100.3%, 5.2% 100.3%);
+  border-radius: 15% 5% 0% 0% / 12% 10% 0% 0%;
 }
 
 .menu-item-text {
@@ -220,7 +222,8 @@ a {
 
   background-color: #424e9e;
   cursor:pointer;
-  clip-path: polygon(0 4%, 100% 0, 91% 100%, 7% 100%);
+  clip-path: polygon(-0.8% 4.8%, 100.1% 0%, 95.5% 100.3%, 5.2% 100.3%);
+  border-radius: 15% 5% 0% 0% / 12% 10% 0% 0%;
 
 }
 
@@ -232,8 +235,7 @@ a {
   max-width: 1350px;
   margin: auto;
   margin-top: -15px;
-  border-radius: 13px 15px 155px 114px;
-  clip-path: polygon(0 0, 100% 0, 98% 71%, 3% 100%);
+  clip-path: url(#subnav);
 }
 
 .subnav .wrapper {
@@ -342,13 +344,11 @@ a {
 }
 
 .latest-news .wrapper .cards .card .card-img {
-  clip-path: polygon(1% 0, 100% 7%, 93% 93%, 7% 96%);
   margin-bottom: 14px;
 }
 
 .latest-news .wrapper .cards .card .card-img img {
-  border-radius: 17px 29px 53px 46px;
-  width: 100%;
+  clip-path: url(#latest-news);
 }
 
 .latest-news .wrapper .cards .card .card-logo {
@@ -384,12 +384,11 @@ a {
 .products {
   text-align: center;
   max-width: 1560px;
-  padding-block: 140px 120px;
+  padding-block: 140px 150px;
   background-color: #eeeef7;
   margin: auto;
   margin-top: 30px;
-  border-radius: 126px 34px 425px 214px;
-  clip-path: polygon(0 8%, 100% 0, 93% 87%, 9% 100%);
+  clip-path: url(#products-background)
 }
 
 .products .wrapper .cards {
@@ -411,8 +410,7 @@ a {
   min-height: fit-content;
   overflow: hidden;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 91% 100%, 4% 92%);
-  border-radius: 10px 10px 46px 75px;
+  clip-path: url(#products);
 }
 
 .products .wrapper .cards .card .card-img img {
@@ -511,26 +509,24 @@ a {
   margin-top: 80px;
 }
 
-.activities-background .wrapper {
+.activities-background  {
   position: relative;
   z-index: -1;
+  margin:auto;
   margin-top: -665px;
-  border-radius: 60px;
-  width: 1360px;
+  width: 1365.48px;
   height: 650px;
   background-color: #424e9e;
-  border-radius: 0px 29px 204px 0px;
-  clip-path: polygon(0 20%, 100% 0, 87% 100%, 17% 83%);
+  clip-path: url(#activities-background);
 }
 .activities {
   text-align: center;
   max-width: 1560px;
-  padding-block: 140px 120px;
+  padding-block: 150px;
   background-color: #eeeef7;
   margin: auto;
   margin-top: 30px;
-  border-radius: 54px 155px 336px 180px;
-  clip-path: polygon(0 0, 100% 15%, 92% 91%, 9% 100%);
+  clip-path: url(#activities);
 }
 
 .activities .wrapper .cards {
@@ -639,27 +635,23 @@ a {
 
 .img1 {
   position: relative;
-  border-radius: 100px 100px 100px 100px;
-  width: 450px;
-  clip-path: polygon(0 8%, 100% 0, 86% 100%, 3% 95%);
+  clip-path: url(#img1);
   height: auto;
 }
 
 .img2 {
+  clip-path: url(#img2);
   position: absolute;
-  clip-path: polygon(0 0, 100% 0, 96% 99%, 3% 100%);
   top: 70px;
   left: -100px;
   width: 200px;
   height: auto;
   z-index: 1;
-  border-radius: 10px 10px 39px 21px;
 }
 
 .img3 {
+  clip-path: url(#img3);
   position: absolute;
-  clip-path: polygon(0 0, 100% 0, 96% 96%, 3% 100%);
-  border-radius: 10px 10px 39px 21px;
   width: 220px;
   height: auto;
   bottom: 33px;
